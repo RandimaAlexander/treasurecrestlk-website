@@ -6,7 +6,9 @@
 <title>Treasure Crest Villa &amp; Cottage | Your Private Escape in Galle, Unawatuna</title>
 <meta name="description" content="Book the whole 1895 Treasure Crest Villa (up to 6 guests) or our forest A-frame cottage for two on Thalpe Hill, Unawatuna. Private dip pool, breakfast included, minutes from Unawatuna Beach. Rated 9.5 Exceptional.">
 <link rel="canonical" href="https://treasurecrestlk.com/">
-<meta name="theme-color" content="#1d3a2e">
+<meta name="theme-color" content="#1a1714">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Work+Sans:wght@300;400;500;600&display=swap">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Treasure Crest Villa &amp; Cottage">
 <meta property="og:title" content="Treasure Crest — Your private escape in Galle">
@@ -15,11 +17,9 @@
 <meta property="og:image" content="https://treasurecrestlk.com/og-image.jpg">
 <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="manifest" href="site.webmanifest">
-<link rel="preload" href="fonts/crimson-600.woff" as="font" type="font/woff" crossorigin>
-<link rel="preload" href="fonts/inter-400.woff" as="font" type="font/woff" crossorigin>
 <link rel="preload" as="image" href="img/villa-landscape-hero-1600.webp" imagesrcset="img/villa-landscape-hero-800.webp 800w, img/villa-landscape-hero-1600.webp 1600w" imagesizes="(max-width: 699px) 220vw, 100vw">
 <link rel="stylesheet" href="css/style.css">
 <script type="application/ld+json">
@@ -37,17 +37,36 @@
 <!-- ===== HEADER ===== -->
 <header class="hdr" id="hdr">
  <div class="wrap hdr-in">
-  <a class="brand" href="#top" aria-label="Treasure Crest home">
-   <svg class="mark" viewBox="0 0 40 46" aria-hidden="true"><path d="M2 45V20A18 18 0 0 1 38 20V45Z" fill="#1d3a2e" stroke="#c69a3f" stroke-width="1.6"/><text x="20" y="35" text-anchor="middle" font-family="Crimson Text, serif" font-size="15" font-weight="600" fill="#e8c97a">TC</text></svg>
-   <span><b>Treasure Crest</b><small>Thalpe Hill · Unawatuna</small></span>
-  </a>
+  <a class="brand" href="#top" aria-label="Treasure Crest Villa home"><img class="logo-l" src="img/logo-light.png" alt="Treasure Crest Villa" width="133" height="180"><img class="logo-d" src="img/logo-dark.png" alt="" width="133" height="180"></a>
   <nav class="nav" id="nav" aria-label="Main">
-   <a href="#stays">Stays</a><a href="#villa">The Villa</a><a href="#cottage">The Cottage</a><a href="#experiences">Experiences</a><a href="#galle">Galle</a><a href="#location">Location</a>
+   <a href="#intro">The Villa</a><a href="#cottage">The Cottage</a><a href="#stays">Stays</a><a href="#experiences">Experiences</a><a href="#galle">Galle</a><a href="#location">Location</a>
    <a class="btn btn-gold nav-cta" href="#book">Check availability</a>
   </nav>
-  <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><i></i><i></i><i></i></button>
+  <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mnav"><i></i><i></i></button>
  </div>
 </header>
+
+<!-- ===== MOBILE MENU ===== -->
+<div class="mnav" id="mnav" aria-hidden="true">
+ <div class="mnav-top">
+  <span class="mnav-brand"><img src="img/logo-light.png" alt="Treasure Crest Villa" width="133" height="180"></span>
+  <button class="mnav-x" id="mnavX" aria-label="Close menu">×</button>
+ </div>
+ <nav class="mnav-links" aria-label="Mobile">
+  <a href="#intro"><i>01</i>The Villa</a>
+  <a href="#cottage"><i>02</i>The Cottage</a>
+  <a href="#stays"><i>03</i>Stays &amp; Prices</a>
+  <a href="#experiences"><i>04</i>Experiences</a>
+  <a href="#galle"><i>05</i>Discover Galle</a>
+  <a href="#reviews"><i>06</i>Reviews</a>
+  <a href="#location"><i>07</i>Location</a>
+ </nav>
+ <div class="mnav-foot">
+  <a class="btn-sq" href="#book"><svg class="i"><use href="#i-cal"/></svg>Check Availability</a>
+  <a class="mnav-wa wa-link" href="https://wa.me/94705399111" target="_blank" rel="noopener"><svg class="i"><use href="#i-wa"/></svg>WhatsApp 070 539 9111</a>
+  <a class="mnav-mail" href="mailto:treasurecrestgalle@gmail.com">treasurecrestgalle@gmail.com</a>
+ </div>
+</div>
 
 <main id="main">
 <!-- ===== HERO ===== -->
@@ -79,11 +98,10 @@
 <div class="cbar-wrap">
  <div class="wrap">
   <div class="cbar reveal">
-   <div class="cb-t"><small>Talk to us directly</small><b>We reply personally</b></div>
-   <a class="cb-i wa-link" href="https://wa.me/94705399111" target="_blank" rel="noopener"><span class="ci ci-wa"><svg><use href="#i-wa"/></svg></span><span><small>WhatsApp</small>070 539 9111</span></a>
-   <a class="cb-i" href="tel:+94705399111"><span class="ci"><svg><use href="#i-phone"/></svg></span><span><small>Call us</small>+94 70 539 9111</span></a>
-   <a class="cb-i" href="mailto:treasurecrestgalle@gmail.com"><span class="ci"><svg><use href="#i-mail"/></svg></span><span><small>Email</small>treasurecrestgalle@gmail.com</span></a>
-   <a class="btn btn-gold cb-btn" href="#book"><svg class="i"><use href="#i-cal"/></svg>Check availability</a>
+   <a class="cb-i" href="tel:+94705399111"><small>Phone</small><b>070 539 9111</b></a>
+   <a class="cb-i wa-link" href="https://wa.me/94705399111" target="_blank" rel="noopener"><small>WhatsApp</small><span><svg><use href="#i-chat"/></svg>WhatsApp Us <em>→</em></span></a>
+   <a class="cb-i" href="mailto:treasurecrestgalle@gmail.com"><small>Email</small><span><svg><use href="#i-mail"/></svg>Email Us <em>→</em></span></a>
+   <a class="cb-btn" href="#book">Check Availability</a>
   </div>
  </div>
 </div>
@@ -102,6 +120,45 @@
   <div class="intro-ph">
    <div class="ip-a reveal-img"><img loading="lazy" src="img/villa-carved-bed-800.webp" alt="Antique carved wooden bed with crisp white linen"></div>
    <div class="ip-b reveal-img"><img loading="lazy" src="img/villa-tea-service-800.webp" srcset="img/villa-tea-service-800.webp 600w, img/villa-tea-service-1600.webp 960w" sizes="(min-width:1000px) 300px, 50vw" alt="Colonial tea service on a ceramic tray"></div>
+  </div>
+ </div>
+</section>
+
+<!-- ===== VILLA ESTATE (from the original site) ===== -->
+<section class="estate" id="villa">
+ <div class="wrap estate-in">
+  <div class="es-tall reveal-img"><img loading="lazy" src="img/villa-verandah-800.webp" srcset="img/villa-verandah-800.webp 800w, img/villa-verandah-1600.webp 1280w" sizes="(min-width:1000px) 520px, 92vw" alt="Yellow colonial verandah with 1895 plaque and teak chairs"></div>
+  <div class="es-txt">
+   <p class="eyebrow reveal">01 — The Villa</p>
+   <h2 class="reveal">Entirely Yours.<br>Nothing Shared.</h2>
+   <div class="orn reveal"><span></span><svg viewBox="0 0 10 10"><path d="M5 0l5 5-5 5L0 5z"/></svg><span></span></div>
+   <p class="reveal">When you reserve Treasure Crest Villa, the whole villa is yours: every bedroom suite, the private dip pool, the sun deck, the tropical gardens and the colonial verandahs. No other guests, no shared spaces, no interruptions. Just your own private tropical sanctuary.</p>
+   <div class="es-stats reveal"><div><b>3</b><span>Bedrooms</span></div><div><b>6</b><span>Guests</span></div><div><b>1</b><span>Private Dip Pool</span></div><div><b>½</b><span>Acre Garden</span></div></div>
+   <div class="es-aerial reveal-img"><img loading="lazy" src="img/villa-aerial-view-800.webp" srcset="img/villa-aerial-view-800.webp 800w, img/villa-aerial-view-1600.webp 1600w" sizes="(min-width:1000px) 560px, 92vw" alt="Aerial view of Treasure Crest Villa in the tropical jungle"></div>
+   <a class="txt-link reveal" href="#amenities">See What's Included <span></span></a>
+  </div>
+ </div>
+</section>
+
+<!-- ===== COTTAGE ===== -->
+<section class="cottage" id="cottage">
+ <div class="ct-bg" data-parallax="0.15"><img loading="lazy" src="img/cottage-drone-1600.webp" alt=""></div>
+ <div class="wrap ct-in">
+  <div class="ct-txt">
+   <span class="adult reveal">Adults only</span>
+   <p class="eyebrow gold reveal">Treasure Woods Cottage</p>
+   <h2 class="reveal">A cottage for two, at the edge of the woods</h2>
+   <p class="lead reveal">A hand-built wooden A-frame on the hilltop. Mountain air, a sea breeze through the trees, and nothing to do but slow down. Made for honeymoons, anniversaries and quiet escapes.</p>
+   <div class="pills reveal"><span>Queen bed</span><span>Forest balcony</span><span>Breakfast for two</span><span>Air-conditioning</span><span>Garden swing</span><span>10 min to the beach</span></div>
+   <div class="ct-price reveal"><b>LKR 15,000</b><span>per night · breakfast included</span></div>
+   <a class="btn btn-gold btn-lg reveal" href="#book" data-stay="cottage">Check cottage dates</a>
+  </div>
+  <div class="ct-gal" data-gallery>
+   <a class="c1 reveal-img" href="img/cottage-bed-1600.webp"><img loading="lazy" src="img/cottage-bed-800.webp" alt="Cottage bedroom in warm wood"></a>
+   <a class="c2 reveal-img" href="img/cottage-view-1600.webp"><img loading="lazy" src="img/cottage-view-800.webp" alt="Doors opening to the forest balcony"></a>
+   <a class="c3 reveal-img" href="img/cottage-candles-1600.webp"><img loading="lazy" src="img/cottage-candles-800.webp" alt="Candles and wine glasses"></a>
+   <a class="c4 reveal-img" href="img/garden-swing-1600.webp"><img loading="lazy" src="img/garden-swing-800.webp" alt="Wooden garden swing in the forest"></a>
+   <a class="c5 reveal-img" href="img/cottage-day-1600.webp"><img loading="lazy" src="img/cottage-day-800.webp" alt="The A-frame cottage on stilts"></a>
   </div>
  </div>
 </section>
@@ -129,8 +186,8 @@
    </article>
    <article class="card card-best tilt reveal">
     <div class="card-ph duo">
-     <img loading="lazy" class="duo-a" src="img/hero-villa-800.webp" srcset="img/hero-villa-800.webp 800w, img/hero-villa-1600.webp 1600w" sizes="(min-width:1000px) 380px, 92vw" alt="Treasure Crest Villa from the air">
-     <img loading="lazy" class="duo-b" src="img/cottage-drone-800.webp" srcset="img/cottage-drone-800.webp 800w, img/cottage-drone-1600.webp 1600w" sizes="(min-width:1000px) 380px, 92vw" alt="Treasure Woods Cottage from the air">
+     <img loading="lazy" class="duo-a" src="img/villa-exterior-1600.webp" sizes="(min-width:1000px) 380px, 92vw" alt="The sunny yellow villa in its garden">
+     <img loading="lazy" class="duo-b" src="img/cottage-view-1600.webp" sizes="(min-width:1000px) 380px, 92vw" alt="Warm wooden interior of the A-frame cottage">
      <span class="duo-l duo-la">Villa</span><span class="duo-l duo-lb">Cottage</span><span class="duo-plus">+</span>
      <span class="tag tag-gold">Best for groups</span>
     </div>
@@ -142,45 +199,6 @@
    </article>
   </div>
   <p class="note reveal">All prices include breakfast. No payment needed to ask. We confirm everything with you on WhatsApp.</p>
- </div>
-</section>
-
-<!-- ===== COTTAGE ===== -->
-<section class="cottage" id="cottage">
- <div class="ct-bg" data-parallax="0.15"><img loading="lazy" src="img/cottage-drone-1600.webp" alt=""></div>
- <div class="wrap ct-in">
-  <div class="ct-txt">
-   <span class="adult reveal">Adults only</span>
-   <p class="eyebrow gold reveal">Treasure Woods Cottage</p>
-   <h2 class="reveal">A cottage for two, at the edge of the woods</h2>
-   <p class="lead reveal">A hand-built wooden A-frame on the hilltop. Mountain air, a sea breeze through the trees, and nothing to do but slow down. Made for honeymoons, anniversaries and quiet escapes.</p>
-   <div class="pills reveal"><span>Queen bed</span><span>Forest balcony</span><span>Breakfast for two</span><span>Air-conditioning</span><span>Garden swing</span><span>10 min to the beach</span></div>
-   <div class="ct-price reveal"><b>LKR 15,000</b><span>per night · breakfast included</span></div>
-   <a class="btn btn-gold btn-lg reveal" href="#book" data-stay="cottage">Check cottage dates</a>
-  </div>
-  <div class="ct-gal" data-gallery>
-   <a class="c1 reveal-img" href="img/cottage-bed-1600.webp"><img loading="lazy" src="img/cottage-bed-800.webp" alt="Cottage bedroom in warm wood"></a>
-   <a class="c2 reveal-img" href="img/cottage-view-1600.webp"><img loading="lazy" src="img/cottage-view-800.webp" alt="Doors opening to the forest balcony"></a>
-   <a class="c3 reveal-img" href="img/cottage-candles-1600.webp"><img loading="lazy" src="img/cottage-candles-800.webp" alt="Candles and wine glasses"></a>
-   <a class="c4 reveal-img" href="img/garden-swing-1600.webp"><img loading="lazy" src="img/garden-swing-800.webp" alt="Wooden garden swing in the forest"></a>
-   <a class="c5 reveal-img" href="img/cottage-day-1600.webp"><img loading="lazy" src="img/cottage-day-800.webp" alt="The A-frame cottage on stilts"></a>
-  </div>
- </div>
-</section>
-
-<!-- ===== VILLA ESTATE (from the original site) ===== -->
-<section class="estate" id="villa">
- <div class="wrap estate-in">
-  <div class="es-tall reveal-img"><img loading="lazy" src="img/villa-verandah-800.webp" srcset="img/villa-verandah-800.webp 800w, img/villa-verandah-1600.webp 1280w" sizes="(min-width:1000px) 520px, 92vw" alt="Yellow colonial verandah with 1895 plaque and teak chairs"></div>
-  <div class="es-txt">
-   <p class="eyebrow reveal">01 — The Villa</p>
-   <h2 class="reveal">Entirely Yours.<br>Nothing Shared.</h2>
-   <div class="orn reveal"><span></span><svg viewBox="0 0 10 10"><path d="M5 0l5 5-5 5L0 5z"/></svg><span></span></div>
-   <p class="reveal">When you reserve Treasure Crest Villa, the whole villa is yours: every bedroom suite, the private dip pool, the sun deck, the tropical gardens and the colonial verandahs. No other guests, no shared spaces, no interruptions. Just your own private tropical sanctuary.</p>
-   <div class="es-stats reveal"><div><b>3</b><span>Bedrooms</span></div><div><b>6</b><span>Guests</span></div><div><b>1</b><span>Private Dip Pool</span></div><div><b>½</b><span>Acre Garden</span></div></div>
-   <div class="es-aerial reveal-img"><img loading="lazy" src="img/villa-aerial-view-800.webp" srcset="img/villa-aerial-view-800.webp 800w, img/villa-aerial-view-1600.webp 1600w" sizes="(min-width:1000px) 560px, 92vw" alt="Aerial view of Treasure Crest Villa in the tropical jungle"></div>
-   <a class="txt-link reveal" href="#amenities">See What's Included <span></span></a>
-  </div>
  </div>
 </section>
 
@@ -202,40 +220,62 @@
 
 <!-- ===== EXPERIENCES ===== -->
 <section class="exp" id="experiences">
- <div class="wrap">
-  <div class="head reveal"><p class="eyebrow gold">A day at Treasure Crest</p><h2>From slow mornings<br class="hide-sm"> <em>to starry nights</em></h2></div>
- </div>
- <div class="xp-row">
-  <article class="xp reveal"><img loading="lazy" src="img/villa-breakfast-1600.webp" alt="Breakfast laid out on the long teak table"><div class="xp-c"><span class="xp-n">01 — Morning</span><h3>Slow mornings.</h3><p>Wake to birdsong and warm light through the palms. Breakfast is ready whenever you are. No rush, nowhere else to be.</p></div></article>
-  <article class="xp reveal"><img loading="lazy" src="img/villa-pool-twilight-1600.webp" alt="A guest relaxing in the dip pool"><div class="xp-c"><span class="xp-n">02 — Afternoon</span><h3>Afternoons by the dip pool.</h3><p>Cool water, dappled shade, a book and a cold drink. The hours simply dissolve.</p></div></article>
-  <article class="xp reveal"><img loading="lazy" src="img/villa-golden-hour-dinner-1600.webp" alt="The dining room glowing at golden hour"><div class="xp-c"><span class="xp-n">03 — Evening</span><h3>Golden-hour dinners.</h3><p>As the light turns amber, the old dining room glows. Local flavours, candlelight and unhurried conversation.</p></div></article>
-  <article class="xp reveal"><img loading="lazy" src="img/cottage-candles-1600.webp" alt="Candlelight and wine in the wooden cottage"><div class="xp-c"><span class="xp-n">04 — Night</span><h3>Tropical nights.</h3><p>When the stars come out, the hill goes quiet. Just the sound of the jungle and a breeze from the sea.</p></div></article>
- </div>
+ <article class="xp">
+  <img loading="lazy" src="img/villa-breakfast-1600.webp" alt="Breakfast laid out on the long teak table">
+  <div class="xp-c">
+   <p class="xp-n reveal">01 — Morning</p>
+   <h3 class="reveal">Slow Mornings.</h3>
+   <p class="xp-p reveal">Wake to birdsong and warm light filtering through the palms. Breakfast appears whenever you're ready. No rush. Nowhere else to be.</p>
+  </div>
+ </article>
+ <article class="xp xp-r">
+  <img loading="lazy" src="img/villa-pool-twilight-1600.webp" alt="A guest relaxing in the private dip pool">
+  <div class="xp-c">
+   <p class="xp-n reveal">02 — Afternoon</p>
+   <h3 class="reveal">Afternoons by the Dip Pool.</h3>
+   <p class="xp-p reveal">Cool water, dappled shade, a book, a drink. The hours dissolve. This is what time was supposed to feel like.</p>
+  </div>
+ </article>
+ <article class="xp">
+  <img loading="lazy" src="img/villa-golden-hour-dinner-1600.webp" alt="The dining room glowing at golden hour">
+  <div class="xp-c">
+   <p class="xp-n reveal">03 — Evening</p>
+   <h3 class="reveal">Golden-Hour Dinners.</h3>
+   <p class="xp-p reveal">As the light turns amber and the air cools, the terrace becomes something magical. Candlelight, local flavours, unhurried conversation.</p>
+  </div>
+ </article>
+ <article class="xp xp-r">
+  <img loading="lazy" src="img/villa-living-room-1600.webp" alt="The villa living room at night">
+  <div class="xp-c">
+   <p class="xp-n reveal">04 — Night</p>
+   <h3 class="reveal">Tropical Evenings.</h3>
+   <p class="xp-p reveal">When the stars appear, the villa transforms. The pool glows. The garden hums. Another kind of Galle reveals itself after dark.</p>
+  </div>
+ </article>
 </section>
 
 <!-- ===== LOCATION ===== -->
 <section class="loc" id="location">
- <div class="wrap loc-in">
-  <div>
+ <div class="wrap">
+  <div class="loc-head">
    <p class="eyebrow reveal">Find your way</p>
-   <h2 class="reveal">Quiet on the hill.<br>Close to everything.</h2>
-   <p class="lead reveal">Henawatta, Thalpe Kanda, Unawatuna, Galle (plus code 2775+Q5V, Thalpe Road North). Above the beach crowds, with cool breezes and jungle views.</p>
-   <ul class="dist">
-    <li class="reveal"><span>Unawatuna Beach</span><b>≈ 5 min</b></li>
-    <li class="reveal"><span>Dalawella &amp; Jungle Beach</span><b>≈ 10–15 min</b></li>
-    <li class="reveal"><span>Galle Fort</span><b>≈ 15 min</b></li>
-    <li class="reveal"><span>Koggala Airport</span><b>8 km</b></li>
-    <li class="reveal"><span>Colombo Airport (BIA)</span><b>≈ 2.5–3 hrs</b></li>
-   </ul>
-   <a class="btn btn-line map-btn reveal" href="https://www.google.com/maps/search/Treasure+Crest+Villa+Thalpe+Road+Unawatuna+Sri+Lanka" target="_blank" rel="noopener"><svg class="i"><use href="#i-pin"/></svg>Open in Google Maps <span aria-hidden="true">→</span></a>
+   <h2 class="reveal">Treasure Crest Villa</h2>
+   <p class="loc-addr reveal">2775+Q5V, Thalpe Road North, Unawatuna</p>
   </div>
-  <div class="map reveal-img">
+  <div class="loc-grid">
+   <div class="map reveal-img">
    <iframe title="Treasure Crest Villa location" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Treasure+Crest+Villa+Unawatuna+Sri+Lanka&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=&amp;output=embed"></iframe>
    <a class="map-fb" href="https://www.google.com/maps/search/Treasure+Crest+Villa+Thalpe+Road+Unawatuna+Sri+Lanka" target="_blank" rel="noopener" hidden>
     <span class="mf-pin"><svg><use href="#i-pin"/></svg></span>
     <b>Treasure Crest Villa</b><span>Henawatta, Thalpe Kanda, Unawatuna, Galle</span>
     <em>Open in Google Maps →</em>
    </a>
+   </div>
+   <div class="loc-side reveal">
+    <div><small>Address</small><p>Henawatta, Thalpe Kanda<br>Thalpe Road North<br>Unawatuna, Galle<br>Sri Lanka</p></div>
+    <div><small>Nearest town</small><p>Unawatuna Beach — 5 min<br>Galle Fort — 15 min</p></div>
+    <a class="loc-link" href="https://www.google.com/maps/search/Treasure+Crest+Villa+Thalpe+Road+Unawatuna+Sri+Lanka" target="_blank" rel="noopener">Open in Google Maps <span aria-hidden="true">→</span></a>
+   </div>
   </div>
  </div>
 </section>
@@ -375,44 +415,37 @@
   </div>
  </div>
 
- <div class="marquee" aria-hidden="true"><div class="mq-track">
-  <span>Private dip pool</span><span>Breakfast included</span><span>1895 heritage home</span><span>Forest A-frame cottage</span><span>9.5 Exceptional</span><span>Minutes to the beach</span><span>Free Wi-Fi &amp; parking</span><span>Only your group on the property</span>
-  <span>Private dip pool</span><span>Breakfast included</span><span>1895 heritage home</span><span>Forest A-frame cottage</span><span>9.5 Exceptional</span><span>Minutes to the beach</span><span>Free Wi-Fi &amp; parking</span><span>Only your group on the property</span>
- </div></div>
-
  <div class="ftr-main">
-  <div class="wrap ftr-grid">
-   <div class="ftr-brand">
-    <a class="brand light" href="#top"><svg class="mark" viewBox="0 0 40 46" aria-hidden="true"><path d="M2 45V20A18 18 0 0 1 38 20V45Z" fill="#132a20" stroke="#c69a3f" stroke-width="1.6"/><text x="20" y="35" text-anchor="middle" font-family="Crimson Text, serif" font-size="15" font-weight="600" fill="#e8c97a">TC</text></svg><span><b>Treasure Crest</b><small>Villa &amp; Cottage · Since 1895</small></span></a>
-    <p>A restored cinnamon merchant's home and a forest A-frame cottage on Thalpe Hill, above Unawatuna.</p>
-    <a class="ftr-rate" href="#reviews"><span>9.5</span><b>Exceptional</b><small>on Booking.com</small></a>
+  <div class="wrap ftr-top">
+   <a class="ftr-logo" href="#top"><img src="img/logo-light-lg.png" alt="Treasure Crest Villa" width="267" height="360"><small>Galle, Sri Lanka</small></a>
+   <p class="ftr-tag">A restored cinnamon merchant's home and a forest cottage, on Thalpe Hill above Unawatuna.</p>
+   <span class="ftr-orn"><i></i><svg viewBox="0 0 10 10"><path d="M5 0l5 5-5 5L0 5z"/></svg><i></i></span>
+  </div>
+  <div class="wrap ftr-cols">
+   <div class="ftr-col">
+    <h4>Visit</h4>
+    <p>Henawatta, Thalpe Kanda<br>Unawatuna, Galle<br>Sri Lanka</p>
+    <a class="ftr-more" href="https://www.google.com/maps/search/Treasure+Crest+Villa+Thalpe+Road+Unawatuna+Sri+Lanka" target="_blank" rel="noopener">Get directions →</a>
    </div>
    <div class="ftr-col">
-    <h4>Get in touch</h4>
-    <a class="ftr-ci wa-link" href="https://wa.me/94705399111" target="_blank" rel="noopener"><span class="fci"><svg><use href="#i-wa"/></svg></span>WhatsApp 070 539 9111</a>
-    <a class="ftr-ci" href="tel:+94705399111"><span class="fci"><svg><use href="#i-phone"/></svg></span>+94 70 539 9111</a>
-    <a class="ftr-ci" href="mailto:treasurecrestgalle@gmail.com"><span class="fci"><svg><use href="#i-mail"/></svg></span>treasurecrestgalle@gmail.com</a>
-    <a class="ftr-ci" href="https://www.google.com/maps/search/Treasure+Crest+Villa+Thalpe+Road+Unawatuna+Sri+Lanka" target="_blank" rel="noopener"><span class="fci"><svg><use href="#i-pin"/></svg></span>Henawatta, Thalpe Kanda,<br>Unawatuna, Galle</a>
+    <h4>Contact</h4>
+    <a class="ftr-ci" href="tel:+94705399111"><svg><use href="#i-phone"/></svg>070 539 9111</a>
+    <a class="ftr-ci" href="mailto:treasurecrestgalle@gmail.com"><svg><use href="#i-mail"/></svg>treasurecrestgalle@gmail.com</a>
+    <div class="ftr-btns"><a class="wa-link" href="https://wa.me/94705399111" target="_blank" rel="noopener"><svg><use href="#i-chat"/></svg>WhatsApp →</a><a href="mailto:treasurecrestgalle@gmail.com"><svg><use href="#i-mail"/></svg>Email us →</a></div>
    </div>
    <div class="ftr-col">
     <h4>Explore</h4>
-    <a href="#stays">Our stays</a><a href="#villa">The villa</a><a href="#cottage">The cottage</a><a href="#experiences">Experiences</a><a href="#galle">Discover Galle</a><a href="#reviews">Reviews</a><a href="#location">Find us</a>
-   </div>
-   <div class="ftr-col">
-    <h4>In the press</h4>
-    <a href="https://www.sundaytimes.lk/260419/magazine/treasure-crest-villa-hilltop-escape-by-the-sea-639014.html" target="_blank" rel="noopener">The Sunday Times · “Hilltop escape by the sea” <span aria-hidden="true">↗</span></a>
+    <div class="ftr-links"><a href="#intro">The Villa</a><a href="#cottage">The Cottage</a><a href="#stays">Stays</a><a href="#experiences">Experiences</a><a href="#galle">Galle</a><a href="#reviews">Reviews</a></div>
    </div>
   </div>
   <div class="ftr-word" aria-hidden="true">Treasure Crest</div>
   <div class="wrap ftr-base">
-   <span>© <span id="yr">2026</span> Treasure Crest Villa &amp; Treasure Woods Cottage · Unawatuna, Sri Lanka</span>
-   <span class="ftr-base-r"><a href="privacy.html">Privacy</a><a class="totop" href="#top" aria-label="Back to top"><svg><use href="#i-up"/></svg></a></span>
+   <span>© <span id="yr">2026</span> Treasure Crest Villa &amp; Treasure Woods Cottage</span>
+   <span class="ftr-base-r"><a href="https://www.sundaytimes.lk/260419/magazine/treasure-crest-villa-hilltop-escape-by-the-sea-639014.html" target="_blank" rel="noopener">As seen in The Sunday Times</a><a href="privacy.html">Privacy</a><a class="totop" href="#top" aria-label="Back to top"><svg><use href="#i-up"/></svg></a></span>
   </div>
  </div>
 </footer>
 
-<!-- Sticky mobile bar -->
-<div class="mbar" id="mbar"><a class="btn btn-wa wa-link" href="https://wa.me/94705399111" target="_blank" rel="noopener"><svg class="i"><use href="#i-wa"/></svg>WhatsApp</a><a class="btn btn-gold" href="#book">Check availability</a></div>
 
 <!-- Lightbox -->
 <div class="lb" id="lb" hidden><button class="lb-x" id="lbX" aria-label="Close">×</button><button class="lb-p" id="lbP" aria-label="Previous">‹</button><img id="lbImg" alt=""><button class="lb-n" id="lbN" aria-label="Next">›</button></div>
