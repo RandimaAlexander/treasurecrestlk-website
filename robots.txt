@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://treasurecrestlk.com/sitemap.xml
