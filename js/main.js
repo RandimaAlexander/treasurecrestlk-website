@@ -30,9 +30,12 @@ const onScroll = () => {
 };
 const nearBooking = () => { const b = $('#book'); if (!b) return false; const r = b.getBoundingClientRect(); return r.top < innerHeight * 0.85 && r.bottom > 0; };
 addEventListener('scroll', onScroll, { passive: true }); onScroll();
-const burger = $('#burger');
-burger.addEventListener('click', () => { const open = document.body.classList.toggle('menu'); burger.setAttribute('aria-expanded', open); });
-$$('#nav a').forEach(a => a.addEventListener('click', () => { document.body.classList.remove('menu'); burger.setAttribute('aria-expanded', false); }));
+const burger = $('#burger'), mnav = $('#mnav');
+const setMenu = open => { document.body.classList.toggle('menu', open); burger.setAttribute('aria-expanded', open); if (mnav) mnav.setAttribute('aria-hidden', !open); };
+burger.addEventListener('click', () => setMenu(true));
+if ($('#mnavX')) $('#mnavX').addEventListener('click', () => setMenu(false));
+$$('#mnav a, #nav a').forEach(a => a.addEventListener('click', () => setMenu(false)));
+addEventListener('keydown', e => { if (e.key === 'Escape') setMenu(false); });
 $('#yr').textContent = new Date().getFullYear();
 
 /* ---------- reveal on scroll + counters ---------- */
